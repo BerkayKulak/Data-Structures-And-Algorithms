@@ -1,6 +1,16 @@
 package arrays;
 
+import java.util.Arrays;
+
 public class SingleDimensionArray {
+  public static void main(String[] args) {
+    SingleDimensionArray sda = new SingleDimensionArray(3);
+    sda.insert(0,10);
+    sda.insert(1,10);
+    sda.insert(2,10);
+
+    System.out.println(sda.arr[0]);
+}
   int arr[] = null;
 
   public SingleDimensionArray(int sizeOfArray) {
