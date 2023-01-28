@@ -10,8 +10,6 @@ public class duplicateNumberQuestion {
             return n;
         }
  
-        // creating another array for only storing
-        // the unique elements
         int[] temp = new int[n];
         int j = 0;
  
@@ -23,7 +21,6 @@ public class duplicateNumberQuestion {
  
         temp[j++] = a[n - 1];
  
-        // Changing the original array
         for (int i = 0; i < j; i++) {
             a[i] = temp[i];
         }
@@ -37,7 +34,6 @@ public class duplicateNumberQuestion {
  
         n = removeduplicates(a, n);
  
-        // Printing The array elements
         for (int i = 0; i < n; i++)
             System.out.print(a[i] + " ");
     }
